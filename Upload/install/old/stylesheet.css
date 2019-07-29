@@ -6,10 +6,9 @@
 body {
 	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 12px;
-	line-height: 1.6em;
-	margin: 0;
-	padding: 0;
 	background: #fff;
+	color: #333;
+	margin: 0;
 }
 
 a {
@@ -23,13 +22,8 @@ a:hover {
 }
 
 #container {
-/* margin: auto auto;
- width: 880px;*/
- width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-
+ margin: auto auto;
+ width: 880px;
 }
 
 /* Logo */
@@ -57,23 +51,9 @@ a:hover {
 	background: #fff;
 }
 
-@media(min-width:414px) {
-#progress {
-/*	width: 230px; */
-    width: 30%;
-}
-}
-
-@media(max-width:414px) {
-#progress {
-/*	width: 230px; */
-    width: 30px;
-}
-}
-
 /* Progress Side bar */
 #progress {
-/*	width: 230px; */ 
+	width: 230px;
 	float: left;
 	margin: 0;
 	padding: 10px 0 0 5px;
@@ -92,185 +72,69 @@ a:hover {
 	font-weight: normal;
 	margin: 4px 0 12px;
 	padding: 2px 0 1px 24px;
-/*	background-image: url("images/inactive.png");*/
+	background-image: url("images/inactive.png");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	overflow: hide;	
 }
 
 #progress li.active {
-/*	background-image: url("images/active.png");*/
+	background-image: url("images/active.png");
 	color: #333;
 	padding-top: 0;
 	font-size: 14px;
 	font-weight: bold;
-	overflow: hidden;
 }
 
 #progress li.intro {
-/*	background-position: 0 -20px;*/
-    background-position: 0 0px;
-	background-image: url("images/welcome_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
-
-}
-#progress li.intro.active {
-/*	background-position: 0 -20px;*/
-background-position: 0 0px;
-	background-image: url("images/welcome_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
+	background-position: 0 -20px;
 }
 
-#progress li.license  {
-/*	background-position: 0 -40px; */
-    background-position: 0 0px;
-	background-image: url("images/license_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
-
+#progress li.license {
+	background-position: 0 -40px;
 }
-#progress li.license.active   {
-/*	background-position: 0 -40px; */
-    background-position: 0 0px;
-	background-image: url("images/license_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
 
-}
 #progress li.requirements_check {
-/*	background-position: 0 -60px;*/
-    background-position: 0 0px;
-	background-image: url("images/requirements_check_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;		
-}
-
-#progress li.requirements_check.active {
-/*	background-position: 0 -60px;*/
-    background-position: 0 0px;
-	background-image: url("images/requirements_check_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;		
+	background-position: 0 -60px;
 }
 
 #progress li.database_info {
-/*	background-position: 0 -80px*/
-    background-position: 0 0px;
-	background-image: url("images/database_info_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;			
-}
-
-#progress li.database_info.active {
-/*	background-position: 0 -80px*/
-    background-position: 0 0px;
-	background-image: url("images/database_info_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;			
+	background-position: 0 -80px;
 }
 
 #progress li.create_tables {
-/*	background-position: 0 -100px;*/
-    background-position: 0 0px;
-	background-image: url("images/create_tables_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;		
-}
-
-#progress li.create_tables.active {
-/*	background-position: 0 -100px;*/
-    background-position: 0 0px;
-	background-image: url("images/create_tables_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;		
+	background-position: 0 -100px;
 }
 
 #progress li.populate_tables {
-/*    background-position: 0 0px; */
-	background-image: url("images/populate_tables_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
-#progress li.populate_tables.active {
-/*    background-position: 0 0px; */
-	background-image: url("images/populate_tables_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
+	background-position: 0 -120px;
 }
 
 #progress li.templates {
-/*	background-position: 0 -140px;*/
-	background-image: url("images/templates_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
-}
-
-#progress li.templates.active {
-/*	background-position: 0 -140px;*/
-	background-image: url("images/templates_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
+	background-position: 0 -140px;
 }
 
 #progress li.configuration {
-/*	background-position: 0 -160px; */
-	background-image: url("images/configuration_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
-#progress li.configuration.active {
-/*	background-position: 0 -160px; */
-	background-image: url("images/configuration_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;
+	background-position: 0 -160px;
 }
 
 #progress li.adminuser {
-/*	background-position: 0 -180px;*/
-	background-image: url("images/adminuser_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
-}
-
-#progress li.adminuser.active {
-/*	background-position: 0 -180px;*/
-	background-image: url("images/adminuser_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
+	background-position: 0 -180px;
 }
 
 #progress li.final {
-/*	background-position: 0 -200px;*/
-	background-image: url("images/final_inactive.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
-}
-
-#progress li.final.active {
-/*	background-position: 0 -200px;*/
-	background-image: url("images/final_active.png");
-	background-repeat: no-repeat;
-	overflow: hidden;	
+	background-position: 0 -200px;
 }
 
 /* Content Area */
 #content {
-/*	margin-left: 235px;
-	width: 580px;*/
-    margin-left: 30%;
-	width: 60%;
-
+	margin-left: 235px;
+	width: 580px;
 	padding: 10px 20px 0 30px;
-	border-left: 0px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
 }
 
 * html #content {
-/*	width: 580px;*/
-   width: 60%;	
+	width: 580px;
 }
 
 /* Heading Styles */
@@ -297,22 +161,8 @@ h4 {
 	padding: 10px;
 	overflow: scroll;
 	height: 400px;
-/*	width: 560px; */
+	width: 560px;
 	border: 1px solid #ccc;
-}
-
-@media(max-width:414px) {
-.license_agreement {
-/*	width: 230px; */
-    width: 80%;
-}
-}
-
-@media(min-width:414px) {
-.license_agreement {
-/*	width: 230px; */
-    width: 90%;
-}
 }
 
 .license_agreement ul {
@@ -350,15 +200,7 @@ h4 {
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;	
-}
-
-@media(max-width:800px) {
-.border_wrapper {
-/*	width: 230px; */
-    overflow: scroll;
-    overflow-y: hidden;
-}
+	-webkit-border-radius: 6px;
 }
 
 .border_wrapper div.title {
@@ -383,25 +225,12 @@ table.general {
 	background: #ccc;
 	width: 100%;
 }
-@media(min-width:414px) {
 
-table.general {
-	background: #ccc;
-	width: 100%;
-}
-}
-
-@media(max-width:414px) {
-
-table.general {
-/*	width: 350px;*/
-}
-}
 table.general td {
 	border-top: 1px solid #fafafa;
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid #ccc;
-	border-left: 1px solid #fafafa;	
+	border-left: 1px solid #fafafa;
 }
 
 table.general tr td:last-child {
@@ -469,22 +298,6 @@ input.text_input {
 	outline: 0;
 }
 
-@media(min-width:800px) {
-
-input.text_input {
-
-	width: 300px;
-
-}
-}
-@media(max-width:414px) {
-
-input.text_input {
-
-	width: 100px;
-
-}
-}
 select {
 	border: 1px solid #aaa;
 	padding: 4px;
