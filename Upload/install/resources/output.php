@@ -64,6 +64,7 @@ class installerOutput {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>{$this->title} &gt; {$title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" />
 	<script type="text/javascript" src="../jscripts/jquery.js"></script>
 	<script type="text/javascript" src="../jscripts/general.js?ver=1807"></script>
